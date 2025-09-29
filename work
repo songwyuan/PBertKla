@@ -1,0 +1,14 @@
+###### PBertKla
+#准备
+## 环境准备
+```
+micromamba create -n pbertkla python=3.8 -y
+micromamba activate pbertkla
+```
+## 数据准备
+```
+mkdir -p /mnt/alamo01/users/yuansongwei7/pbertkla_data
+cd /mnt/alamo01/users/yuansongwei7/pbertkla_data
+git clone https://github.com/laihongyan/PBertKla.git（https://github.com/laihongyan/PBertKla/blob/main/README.md）
+
+```
