@@ -1,14 +1,36 @@
 ###### PBertKla
+# 目录结构
+```
+/mnt/alamo01/users/yuansongwei7/
+ ├── pbertkla_env/        # micromamba 环境目录（自动生成）
+ ├── PBertKla/            # 项目代码（解压自 GitHub）
+ │    ├── Data/           # 数据文件
+ │    │    ├── PBertKla_train.csv
+ │    │    ├── PBertKla_test.csv
+ │    │    └── mydata.csv (可选：你自己的预测数据)
+ │    ├── Results/        # 输出结果（训练日志、预测文件）
+ │    │    ├── PBertKla_out.ipynb
+ │    │    └── predictions.csv
+ │    ├── PBertKla.ipynb  # 原始 Notebook
+ │    └── train_and_predict.py (可选：脚本版)
+ └── run_pbertkla.sh      # 集群运行脚本
+
+```
+
 #准备
+
 ## 环境准备
+
 ```
 micromamba create -n pbertkla python=3.8 -y
 micromamba activate pbertkla
 ```
+
 ## 数据准备
+
 ```
+pip install papermill nbconvert -i https://pypi.tuna.tsinghua.edu.cn/simple
 mkdir -p /mnt/alamo01/users/yuansongwei7/pbertkla_data
 cd /mnt/alamo01/users/yuansongwei7/pbertkla_data
 git clone https://github.com/laihongyan/PBertKla.git（https://github.com/laihongyan/PBertKla/blob/main/README.md）
-
 ```
